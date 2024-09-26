@@ -1,6 +1,9 @@
 # Use an official OpenJDK runtime as a parent image
 FROM openjdk:17-jdk-alpine
 
+# Install Maven
+RUN apk add --no-cache maven
+
 # Set the working directory in the container
 WORKDIR /app
 
