@@ -17,6 +17,8 @@ COPY src ./src
 # Package the application
 RUN mvn package -DskipTests
 
+RUN ls -la target
+
 # Expose the port the application runs on
 EXPOSE 8080
 
